@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegEx-HTML", "RegEx-HTML\RegEx-HTML.csproj", "{CBED13CE-1595-4E2C-90C6-C6564556E961}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBED13CE-1595-4E2C-90C6-C6564556E961}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBED13CE-1595-4E2C-90C6-C6564556E961}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBED13CE-1595-4E2C-90C6-C6564556E961}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBED13CE-1595-4E2C-90C6-C6564556E961}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D7B1C276-5AED-40E0-A1A1-B0FDD8170565}
+	EndGlobalSection
+EndGlobal

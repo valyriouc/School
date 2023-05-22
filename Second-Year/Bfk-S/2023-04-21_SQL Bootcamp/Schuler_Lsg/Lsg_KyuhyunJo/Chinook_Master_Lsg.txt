@@ -1,0 +1,60 @@
+use 'chinook';
+Level 0.
+select track.TrackId, track.Name as Lied_Title, artist.Name as Bandname From track, album, artist 
+where album.artistId = artist.ArtistId AND album.AlbumId = track.AlbumId AND artist.Name = 'Red Hot Chili Peppers';
+
+Level 1.
+select track.TrackId, track.Name as Lied_Titel, genre.Name as Genre from genre, track 
+where genre.GenreId = track.GenreId and genre.Name = 'Metal'; 
+
+Level 2.
+select artist.Name as Bandname, album.Title as Albumname, track.Name as Liedname from artist, album, track 
+where track.Name = 'Intro' and track.AlbumId = album.AlbumId and album.ArtistId = artist.ArtistId;
+
+Level 3.
+select MediaType.name as MediaType, COUNT(track.TrackId) from Track, MediaType 
+where Track.MediaTypeId = MediaType.MediaTypeId Group by MediaType.MediaTypeId;
+
+Level 4.
+select Track.Name, Count(Track.name) From Track Group by Track.name 
+having count(track.name) > 1 order by Count(Track.name) DESC;
+
+Level 5.
+select Distinct Playlist.name from Playlist, PlaylistTrack, Track, Album, Artist 
+where PlaylistTrack.PlaylistId = Playlist.PlaylistId
+And Track.TrackId = PlaylistTrack.TrackId 
+And Album.AlbumId = Track.AlbumIdMusi
+And Artist.ArtistId = Album.ArtistId 
+And Artist.Name = 'The Rolling Stones' ;
+
+Level 6.
+select Customer.LastName, Customer.FirstName, SUM(Invoice.Total) as Ausgegebete_Geld
+from Customer, Invoice
+where Customer.CustomerId = Invoice.CustomerId
+Group By Customer.CustomerId;
+
+Level 7.
+select Artist.Name as Bandname, Count(Distinct Customer.CustomerId) as Anzahl_Fans
+from Artist, Album, Track, InvoiceLine, Invoice, Customer
+where Artist.ArtistId = Album.ArtistId
+And Album.AlbumId = Track.AlbumId
+And Track.TrackId = InvoiceLine.TrackId
+And InvoiceLine.InvoiceId = Invoice.InvoiceId
+And Invoice.CustomerId = Customer.CustomerId
+Group By Artist.ArtistId
+Order By Anzahl_Fans DESC;
+
+Level 8.
+Select Playlist.PlaylistId AS PId, Playlist.Name AS PlayList_Name, ROUND(SUM(Track.Milliseconds)/60000,1) AS Playtime_Minute
+from Playlist, PlaylistTrack, Track 
+where playlist.PlaylistId = playlistTrack.PlaylistId
+And PlaylistTrack.TrackId = Track.TrackId
+Group By Playlist.PlaylistId
+Having Playtime_Minute >= 60
+Order By Playtime_Minute ASC;
+
+Level zz.
+
+
+
+Level zzz.

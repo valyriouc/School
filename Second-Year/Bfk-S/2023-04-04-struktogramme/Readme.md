@@ -1,0 +1,1 @@
+<https://dditools.inf.tu-dresden.de/ovk/Informatik/Programmierung/Grundlagen/Struktogramme.html>

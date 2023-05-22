@@ -1,0 +1,75 @@
+<!--Test for comment, empty_space_btween.-->
+                          <            Alle>
+<!--Das ist nochmal Kommentar-->
+<!--Das ist andereKommentar                 -->
+	<                   Person attr1="attr1">
+<!--Das ist andereKommentar-->
+		<Name                  >Osmann</Name>
+		                <Vorname>Hesham</Vorname>
+<!--Das ist welche Kommentar-->
+	                	<Alter>30</Alter>
+	         	<Nationalitaet>Egypt</Nationalitaet>
+		<Geschlecht>Mann</Geschlecht>
+	</Person>
+<!--Das ist egen woKommentar-->
+	<Person>
+		<Name>Hofmann</Name>
+	                	
+
+<!--oder ueberal Kommentar ist-->
+<Vorname>Maurice</Vorname>
+	                           	<Alter>24</Alter>
+		                                <Nationalitaet>Deutschland</Nationalitaet>
+	                            	<Geschlecht>Mann</Geschlecht>
+	</Person>
+<!--egal muss die Programm handeln koennen.-->
+	<Monster>
+		<Name>ET</Name>
+		<Vorname>My_Friend</Vorname>
+	</Monster>
+	<Monster>
+		<Name>Thor</Name>
+		<Vorname>GodOfThunder</Vorname>
+	</Monster>
+	
+	<LehrerinnenOderLehrern>
+		<Person>
+			<Name>Baldes</Name>
+			<Vorname>Stefan</Vorname>
+			<Alter>40..?</Alter>
+			<Nationalitaet>Deutschland</Nationalitaet>
+			<Geschlecht>Mann</Geschlecht>
+		</Person>
+		<Person>
+			<Name>Schuhmacher</Name>
+			<Vorname>Benedikt</Vorname>
+			<Alter>30..?</Alter>
+			<Nationalitaet>Deutschland</Nationalitaet>
+			<Geschlecht>Mann</Geschlecht>
+		</Person>
+	</LehrerinnenOderLehrern>
+
+	<SchulerinnenOderSchuler>
+		<Person>
+			<Name>Jo</Name>
+			<Vorname>Kyuhyun</Vorname>
+			<Alter>31</Alter>
+			<Nationalitaet>SuedKorea</Nationalitaet>
+			<Geschlecht>Mann</Geschlecht>
+		</Person>
+		<Person>
+			<Name>Shahbazi</Name>
+			<Vorname>Nasim</Vorname>
+			<Alter>Alter der frau istGeheim.^^</Alter>
+			<Nationalitaet>IRAN</Nationalitaet>
+			<Geschlecht>Weiblich</Geschlecht>
+		</Person>
+		<Person>
+			<Name>Yozbashi</Name>
+			<Vorname>Alisina</Vorname>
+			<Alter>24</Alter>
+			<Nationalitaet>Afghanistan</Nationalitaet>
+			<Geschlecht>Mann</Geschlecht>
+		</Person>
+	</SchulerinnenOderSchuler>
+</Alle>

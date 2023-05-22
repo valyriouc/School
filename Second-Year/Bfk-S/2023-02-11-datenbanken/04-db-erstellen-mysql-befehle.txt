@@ -1,0 +1,36 @@
+xampp: Mysql starten
+mysql -u root
+show databases;
+use its;
+describe abteilungen; oder show columns abteilungen;
+select * from abteilungen;
+show tables;
+
+Datei einlesen
+
+mysql -u root < createstaff.sql
+
+oder 
+
+source datei.sql
+
+quit
+
+------------------
+
+
+/* Skript Datenbank erstellen */
+ 
+# Datenbank leeren
+ 
+DROP DATABASE IF EXISTS myDatabase;
+CREATE DATABASE myDatabase;
+USE myDatabase;
+ 
+# Tabellen erstellen
+ 
+CREATE TABLE Staff
+(
+...
+)
+

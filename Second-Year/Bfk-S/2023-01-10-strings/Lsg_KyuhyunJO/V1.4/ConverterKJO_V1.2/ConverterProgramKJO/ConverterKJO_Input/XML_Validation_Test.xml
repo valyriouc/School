@@ -1,0 +1,9 @@
+<!--Das ist Kommentar-->
+<Alle>
+<!--Das ist andere Kommentar-->
+	<Person id="3" Name="Osman">
+		<Name>Osman</Name>
+		<Vorname>Hesham</Vorname>
+	</Person>
+<!--Das ist andere Kommentar-->
+</Alle>

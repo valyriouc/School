@@ -1,0 +1,26 @@
+<script>
+    
+    //
+    // JSON String -> Object
+    //
+    let jsonS = `
+    {
+     "vorname":"Tom",
+     "nachname":"Schmidt",
+     "alter":21
+    }`;
+    alert("JsonString:\n"+jsonS)
+    console.log(jsonS)
+
+    var jsonO = JSON.parse(jsonS);
+    alert("JsonObject:\nvar jsonO = JSON.parse(jsonS);")
+
+    alert('Geburtstag hinzufügen:\njsonO["geburtstag"]="24.12.2002";');
+
+    jsonO["geburtstag"]="24.12.2002";
+
+    var jsonS2 = JSON.stringify(jsonO);
+    alert('Object->Json String:\nvar jsonS2 = JSON.stringify(jsonO);')
+    alert("JsonString2:\n"+jsonS2)
+</script>
+   

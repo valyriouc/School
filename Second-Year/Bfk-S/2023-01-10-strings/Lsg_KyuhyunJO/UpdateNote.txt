@@ -1,0 +1,31 @@
+<Kommentare von dem Entwickler>
+	Zuerst möchte ich danke dir dafür, dass Sie meinen Programm benutzen, sagen.
+	Wenn Sie etwa Problem oder Bug finden oder Feedback zu mir geben möchten,
+	bitte melden Sie direkt mir oder Schicken Sie Einen E-Mail nach "Kyuhyun.jo@its-stuttgart.de".  
+	Vielen Dank für Ihre Aufmerksamkeit.
+
+Das Ziel des programm : Funktiert fuer allen Validate XML File.
+<Update Note>
+	
+ <Vers 0.1>
+	Fehler beheben
+	- Ergebnis(.xml File)
+		-"<Person>", "</Person>" hat hinzugefügt.
+		-Der Fehler, dass der erste Zeil des gelesendene
+		 CSV wird geschrieben auf XML File als ein element, hat beheben geworden.
+	    
+	Hinzufügene Kommentare
+	- in Program.cs
+		-über die Theme, Einstellungen des Verzeichnis.
+<Vers 1.1>
+Benutzer kann CSV_Titel und CSV_Them_teil auswaehlen.
+Dafuer das program geben alle moegliche optionen.
+	
+<Vers 1.2>
+	- Xml File mit Kommentar kann auch zu CSV kovertiert werden.
+	- File Pfad, InputPfad, OutputPfad, FileName hat getrennt geworden.
+		mit System.IO -> Path.Combine(string Path,...usw)
+
+
+
+

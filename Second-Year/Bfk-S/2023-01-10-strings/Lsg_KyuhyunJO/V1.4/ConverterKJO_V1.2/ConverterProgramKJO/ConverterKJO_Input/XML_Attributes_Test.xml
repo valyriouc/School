@@ -1,0 +1,10 @@
+        <Alle attr1 = "aa" attr2 = "bb">
+ 	     <Person attr3 = "cc">
+		<Name>Osmann</Name>
+	   	<Vorname>Hesham</Vorname>
+ 		<Alter>30</Alter>
+	   	<Nationalitaet>Egypt</Nationalitaet>
+		<Geschlecht>Mann</Geschlecht>
+	</Person>
+	
+</Alle>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01ArbeitsblattStrings", "01ArbeitsblattStrings\01ArbeitsblattStrings.csproj", "{A3865B0D-6267-480D-AB95-E3D2791D916C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02ArbeitsauftragCSVtoXML", "02ArbeitsauftragCSVtoXML\02ArbeitsauftragCSVtoXML.csproj", "{89D01B2B-A892-431B-91E9-FD5F2F704668}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3865B0D-6267-480D-AB95-E3D2791D916C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3865B0D-6267-480D-AB95-E3D2791D916C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3865B0D-6267-480D-AB95-E3D2791D916C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3865B0D-6267-480D-AB95-E3D2791D916C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89D01B2B-A892-431B-91E9-FD5F2F704668}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89D01B2B-A892-431B-91E9-FD5F2F704668}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89D01B2B-A892-431B-91E9-FD5F2F704668}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89D01B2B-A892-431B-91E9-FD5F2F704668}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {58967D34-89D4-4657-92E8-DED66505A1D6}
+	EndGlobalSection
+EndGlobal

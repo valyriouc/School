@@ -1,0 +1,21 @@
+class CsvAnfrage : Anfrage{
+  public CsvAnfrage(string pfad) {
+     string[] zeilen = Files.ReadAllLines(pfad);
+	 for(int i=0;i<zeilen.Length;i++) {
+	    string zeile = zeilen[i];
+	    string[] daten = zeilen.Split(';');
+        anfrageNr=daten[0];
+        pvLeistung=daten[1];
+        speicherKapazitaet=daten[2];
+
+        for(int iFl = 3; iFl<daten.Length;iFl++) {
+		 string[] datenFlaeche = daten[iFl].Split(',');
+		 for(int iDfl = 0; iDfl<datenFlaeche.Length;iDfl++) {
+		     dachFlaechen.Add(new Flaeche(datenFlaeche[0],datenFlaeche[1],datenFlaeche[2]))
+		 }
+		}
+        		
+	 }
+     	 
+  }
+}

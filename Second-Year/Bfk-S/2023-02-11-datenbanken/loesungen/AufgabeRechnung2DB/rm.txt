@@ -1,0 +1,48 @@
+Tabellen ohne FS-Verbindung
+===========================
+
+Kunde(Kundennr(PS),Name,Vorname,Straße,Hausnr,PLZ(FS))
+
+Ort(PLZ(PS),Ort)
+
+Auftrag(Auftragsnr(PS),Datum, Bearbeiter,Auftragsart, MwstP, Zahlungsvermerk)
+
+Position(PosNr(PS),Artikelnr,Artikel,Menge,Einzelpreis)
+
+Firma(FirmenNr(PS),Name,Straße,Hausnr,PLZ(FS), Geschäftsführer) 
+
+Bankdaten(Konto(PS),Bankname,UstNr,SteuerNr,BLZ)
+
+Gericht(HBR(PS),Name)
+
+Tabellen FS-Verbindung
+===========================
+
+Kunde(Kundennr(PS),PLZ(FS))
+
+Auftrag(Auftragsnr(PS),Kundennr(FS),FirmenNr(FS))
+
+hatAuftragsPosition(ID(PS),Auftragsnr(FS),PosNr(FS))
+
+Firma(FirmenNr(PS),HBR(FS)) 
+
+Bankdaten(Konto(PS),FirmenNr(FS))
+
+Tabelle insgesamt
+=================
+
+Kunde(Kundennr(PS),Name,Vorname,Straße,Hausnr,PLZ(FS))
+
+Ort(PLZ(PS),Ort)
+
+Auftrag(Auftragsnr(PS),Datum, Bearbeiter,Auftragsart, MwstP, Zahlungsvermerk,Kundennr(FS),FirmenNr(FS))
+
+Position(PosNr(PS),Artikelnr,Artikel,Menge,Einzelpreis)
+
+hatAuftragsPosition(ID(PS),Auftragsnr(FS),PosNr(FS))
+
+Firma(FirmenNr(PS),Name,Straße,Hausnr,PLZ(FS), Geschäftsführer,HBR(FS)) 
+
+Bankdaten(Konto(PS),Bankname,UstNr,SteuerNr,BLZ,FirmenNr(FS))
+
+Gericht(HBR(PS),Name)

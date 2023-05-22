@@ -1,0 +1,28 @@
+27: Wie viele Spieler hat jeder Verein der ersten Liga? Gib die Ergebnisse mit dem
+Vereinsnamen aus und ordne sie absteigend nach der Anzahl der Spieler
+
+-- Alle Spieler
+select * from Spieler;
+
+-- Alle Spieler mit Verein
+select Spieler.Spieler_Name, Verein.Name from Spieler, Verein where Spieler.Vereins_ID=Verein.V_ID;
+
+-- Alle Spieler mit Verein in der ersten Liga
+select Spieler.Spieler_Name, Verein.Name from Spieler, Verein where Spieler.Vereins_ID=Verein.V_ID AND Liga=1;
+
+-- Zählen und nach Verein.Name groupieren
+select Verein.Name, count(*) from Verein, Spieler WHERE Verein.V_ID=Spieler.Vereins_ID AND Liga=1 group by Verein.Name;
+
+-- Noch sortieren
+select Verein.Name, count(*) AS AnzahlSpieler from Verein, Spieler WHERE Verein.V_ID=Spieler.Vereins_ID AND Liga=1 group by Verein.Name order by AnzahlSpieler DESC;
+
+28: Wie viele Tore sind bisher in jeder Liga gefallen?
+
+-- Alle Spieler mit Verein in der ersten Liga mit Tore
+select Spieler.Spieler_Name, Verein.Name from Spieler, Verein where Spieler.Vereins_ID=Verein.V_ID AND Liga=1;
+
+-- Alle Spieler mit Verein in der ersten Liga mit Tore gruppiert nach Toren
+select Verein.Name, sum(Tore) from Spieler, Verein where Spieler.Vereins_ID=Verein.V_ID AND Liga=1 GROUP BY Verein.Name;
+
+-- Noch sortiert
+select Verein.Name, sum(Tore) AS AnzahlTore from Spieler, Verein where Spieler.Vereins_ID=Verein.V_ID AND Liga=1 GROUP BY Verein.Name ORDER BY AnzahlTore DESC;

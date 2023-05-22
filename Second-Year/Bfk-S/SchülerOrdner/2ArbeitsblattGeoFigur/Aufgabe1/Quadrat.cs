@@ -1,0 +1,26 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Aufgabe1
+{
+    internal class Quadrat : GeometricObject
+    {
+        public double Width { get; set; } = 0;
+        public Quadrat(double width)
+        {
+            Width = width;
+        }
+
+        internal override double BerechneFlaecheninhalt()
+        {
+            return Math.Pow(this.Width, 2);
+        }
+        public override string ToString()
+        {
+            return $"{this.GetType().Name} (Width: {Width})";
+        }
+    }
+}

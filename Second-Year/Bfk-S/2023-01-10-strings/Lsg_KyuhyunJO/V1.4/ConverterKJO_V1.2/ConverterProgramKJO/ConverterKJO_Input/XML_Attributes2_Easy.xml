@@ -1,0 +1,6 @@
+<Alle attr1 = "aa" attr2 = "bb">
+	<Person>
+		<Name>Doe</Name>
+		<Vorname>John</Vorname>
+	</Person>
+</Alle>
