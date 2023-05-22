@@ -103,7 +103,9 @@ class FileHandler:
         # At the end delete the downloaded content
         for u in downloadFolder:
             shutil.rmtree(u)
-
+        
+        # TODO: Implement automated git commiting
+        
         # Auto commit changes
 
         
