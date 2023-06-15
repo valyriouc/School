@@ -101,8 +101,7 @@ class FileHandler:
         FileHandler.copy_files(filtered, sourceFolder, destinationFolder)
 
         # At the end delete the downloaded content
-        for u in downloadFolder:
-            shutil.rmtree(u)
+        shutil.rmtree(downloadFolder)
         
         # TODO: Implement automated git commiting
         
