@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoFigurGUI1", "GeoFigurGUI1.csproj", "{9352F8D8-318F-4BD3-A606-5775848733C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoFigurGUI2", "..\GeoFigurGUI2\GeoFigurGUI2.csproj", "{D49F6570-0B1A-497D-AFF5-26E5D81E450C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9352F8D8-318F-4BD3-A606-5775848733C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9352F8D8-318F-4BD3-A606-5775848733C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9352F8D8-318F-4BD3-A606-5775848733C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9352F8D8-318F-4BD3-A606-5775848733C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D49F6570-0B1A-497D-AFF5-26E5D81E450C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D49F6570-0B1A-497D-AFF5-26E5D81E450C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D49F6570-0B1A-497D-AFF5-26E5D81E450C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D49F6570-0B1A-497D-AFF5-26E5D81E450C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A45DD6AE-4871-46CE-8230-B0B23480158F}
+	EndGlobalSection
+EndGlobal

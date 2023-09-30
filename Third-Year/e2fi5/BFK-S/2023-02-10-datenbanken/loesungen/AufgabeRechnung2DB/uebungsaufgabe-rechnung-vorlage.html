@@ -1,0 +1,45 @@
+<html>
+<head>
+	<title>Test Seite 1</title>
+    <script>
+     function db_result(sql) {
+	    var res = {"select vorname from kunde":"Thomas",
+			   "select name from kunde":"Maier"}
+	    return res[sql];
+	 }
+    </script>
+</head>
+<body>
+	<h1>Kunde</h1>
+	<p>
+	 Name: <span id="name">xxx</span><br>
+	 Vorname: <span id="vorname">xxx</span><br>
+	</p>
+	
+	
+	<table width="600px">
+	<tr>
+	   <td width="30%">Auftragsnummer</td>
+	   <td width="20%">Kundennummer</td>
+	   <td width="50%">Datum</td>
+	</tr>
+	<tr>
+	   <td width="30%">1234</td>
+	   <td width="20%">5678</td>
+	   <td width="50%">13.1.2022</td>
+	</tr>
+	
+	</table>
+	
+	 
+	
+	
+	<script>
+	  var vorname=db_result("select vorname from kunde");
+	  document.getElementById("vorname").innerHTML=vorname;
+	  var name=db_result("select name from kunde");
+	  document.getElementById("name").innerHTML=name;
+	  
+	</script>
+</body>
+</html>

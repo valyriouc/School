@@ -1,0 +1,12 @@
+<Alle>
+   <person>
+      <Name>Schmidt</Name>
+      <Vorname>Tim</Vorname>
+      <Alter>18</Alter>
+   </person>
+   <person>
+      <Name>Mayer</Name>
+      <Vorname>Tina</Vorname>
+      <Alter>20</Alter>
+   </person>
+</Alle>

@@ -1,0 +1,1 @@
+[Übung 2: Börsenpreisbildung – grafische Ermittlung — Landesbildungsserver Baden-Württemberg (schule-bw.de)](https://www.schule-bw.de/faecher-und-schularten/berufliche-bildung/wirtschaft/wiso/bs/kb3/ls02/boersenpreisbildung-grafisch)

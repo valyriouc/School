@@ -1,0 +1,1 @@
+Gruppenmitglieder: Deniz Ferli, Asim Jugo, Bünyamin Güran, Colin Pfeilmaier, Alexander Eckert

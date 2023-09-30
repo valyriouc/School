@@ -1,0 +1,184 @@
+﻿<Window x:Class="GeoFormAnimation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GeoFormAnimation"
+        mc:Ignorable="d"
+        Title="MainWindow" WindowState="Maximized" 
+        FontWeight="Bold" FontSize="12"
+        Height="1100" Width="1500">
+    
+    <Grid Margin="15">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="15"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="15"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Grid.Column="0" Name="Circle">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="15"/>
+                <RowDefinition MinHeight="200"/>
+            </Grid.RowDefinitions>
+
+            <Border Background="LightGray" BorderBrush="Black" BorderThickness="5">
+                <Canvas Name="CanvasCircle" Height="600" Width="400" Background="Gray">
+
+                    <Path Name="CirclePath" Fill="Red" Stroke="Black" StrokeThickness="5">
+                        <Path.Data>
+                            <EllipseGeometry x:Name="CircleGeometry"
+                                             Center="50,50" RadiusX="50" RadiusY="50"/>
+                        </Path.Data>
+                        <Path.Triggers>
+                            <EventTrigger RoutedEvent="Path.Loaded">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <PointAnimation Storyboard.TargetName="CircleGeometry" Storyboard.TargetProperty="Center"
+                                                        From="200,50" To="200,550" Duration="0:0:0:5"
+                                                        AutoReverse="True" RepeatBehavior="Forever"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </Path.Triggers>
+                    </Path>
+                </Canvas>
+            </Border>
+
+            <Border Grid.Row="2" BorderBrush="Black" BorderThickness="5">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="15"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel>
+                        <StackPanel Name="CircleRadius" Orientation="Horizontal" Margin="5" Height="25">
+                            <Slider Minimum="1" Maximum="200" Width="200" LargeChange="10" SmallChange="1" Value="50" VerticalAlignment="Center"/>
+                            <TextBox Text="50" Height="20" Width="50" VerticalAlignment="Center"/>
+                            <Label Content="Radius" VerticalAlignment="Center"/>
+                        </StackPanel>
+
+                        <StackPanel Name="CircleDiameter" Orientation="Horizontal" Margin="5" Height="25">
+                            <Slider Minimum="1" Maximum="400" Width="200" LargeChange="10" SmallChange="1" Value="100" VerticalAlignment="Center"/>
+                            <TextBox Text="100" Height="20" Width="50" VerticalAlignment="Center"/>
+                            <Label Content="Diameter" VerticalAlignment="Center"/>
+                        </StackPanel>
+
+                        <StackPanel Name="ScopeDiameter" Orientation="Horizontal" Margin="5" Height="25">
+                            <Slider Minimum="1" Maximum="1257" Width="200" LargeChange="10" SmallChange="1" Value="314" VerticalAlignment="Center"/>
+                            <TextBox Text="314" Height="20" Width="50" VerticalAlignment="Center"/>
+                            <Label Content="Scope" VerticalAlignment="Center"/>
+                        </StackPanel>
+
+                        <StackPanel Name="AreaDiameter" Orientation="Horizontal" Margin="5" Height="25">
+                            <Slider Minimum="1" Maximum="125664" Width="200" LargeChange="10" SmallChange="1" Value="7854" VerticalAlignment="Center"/>
+                            <TextBox Text="7854" Height="20" Width="50" VerticalAlignment="Center"/>
+                            <Label Content="Area" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </Grid>
+
+        <Grid Grid.Row="0" Grid.Column="2" Name="Triangle">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="15"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Border Grid.Column="2" Background="LightGray" BorderBrush="Black" BorderThickness="5">
+                <Canvas Name="CanvasTriangle" Height="600" Width="400" Background="Gray">
+
+                    <Path Name="TrianglePath" Fill="Blue" Stroke="Black" StrokeThickness="5">
+                        <Path.Data>
+                            <PathGeometry>
+                                <PathFigure x:Name="TrianglePointTop" StartPoint="0,0" IsClosed="True">
+                                    <LineSegment x:Name="TrianglePointBottemRight" Point="100,100"/>
+                                    <LineSegment x:Name="TrinaglePointBottomLeft" Point="0,100"/>
+                                </PathFigure>
+                            </PathGeometry>
+                        </Path.Data>
+                        <Path.Triggers>
+                            <EventTrigger RoutedEvent="Path.Loaded">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <PointAnimation Storyboard.TargetName="TrianglePointTop" Storyboard.TargetProperty="StartPoint"
+                                                        From="150,0" To="150,500" Duration="0:0:0:5"
+                                                        AutoReverse="True" RepeatBehavior="Forever"/>
+
+                                        <PointAnimation Storyboard.TargetName="TrianglePointBottemRight" Storyboard.TargetProperty="Point"
+                                                        From="150,100" To="150,600" Duration="0:0:0:5"
+                                                        AutoReverse="True" RepeatBehavior="Forever"/>
+
+                                        <PointAnimation Storyboard.TargetName="TrinaglePointBottomLeft" Storyboard.TargetProperty="Point"
+                                                        From="250,100" To="250,600" Duration="0:0:0:5"
+                                                        AutoReverse="True" RepeatBehavior="Forever"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </Path.Triggers>
+                    </Path>
+                </Canvas>
+            </Border>
+
+        </Grid>
+
+        <Grid Grid.Row="0" Grid.Column="4" Name="Recangle">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="15"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Border Grid.Column="4" Background="LightGray" BorderBrush="Black" BorderThickness="5">
+                <Canvas Name="CanvasRectangle" Height="600" Width="400" Background="Gray">
+                    <Rectangle Width="100" Height="100" Fill="Green" Stroke="Black" StrokeThickness="5">
+                        <Rectangle.RenderTransform>
+                            <TranslateTransform x:Name="AnimatedTanslateTransform"/>
+                        </Rectangle.RenderTransform>
+                        <Rectangle.Triggers>
+                            <EventTrigger RoutedEvent="Path.Loaded">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Storyboard.TargetName="AnimatedTanslateTransform" Storyboard.TargetProperty="X"
+                                                         From="150" To="150" Duration="0:0:0:5"
+                                                         AutoReverse="True" RepeatBehavior="Forever"/>
+
+                                        <DoubleAnimation Storyboard.TargetName="AnimatedTanslateTransform" Storyboard.TargetProperty="Y"
+                                                         From="0" To="500" Duration="0:0:0:5"
+                                                         AutoReverse="True" RepeatBehavior="Forever"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+                </Canvas>
+            </Border>
+            
+            
+        </Grid>
+
+    </Grid>
+</Window>
