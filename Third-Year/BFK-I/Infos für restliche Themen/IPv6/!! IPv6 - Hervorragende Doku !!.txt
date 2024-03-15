@@ -1,0 +1,55 @@
+IPv6
+====
+
+Aktuelle CCNA - Kurse ( Routing and Switching )
+  Routing & Switching Version 6.0
+    Sem 1, Version 6.0 R&S Einfuehrung in die Netzwerktechnik
+
+
+    Kapitel 6 Vermittlungsschicht 
+	6.1 Vermittlungsschichtprotokolle 
+		6.1.4 IPv6-Paket 
+			6.1.4.1 Die Grenzen von IPv4 
+ 			6.1.4.2 Einführung von IPv6 
+ 			6.1.4.3 Kapselung von IPv6 
+ 			6.1.4.4 IPv6-Paket-Header 
+
+
+    Kapitel 7 IP-Adressierung 
+	7.2 IPv6-Netzwerkadressen 
+		7.2.1 Probleme mit IPv4 
+			7.2.1.1 Die Notwendigkeit für IPv6 
+			7.2.1.2 Koexistenz von IPv4 und IPv6 
+			7.2.1.3 Aktivität - IPv4-Probleme und Lösungen 
+  		7.2.2 IPv6-Adressierung 
+			7.2.2.1 Schreibweise von IPv6-Adressen 
+ 			7.2.2.2 Regel 1 – Weglassen führender Nullen 
+ 			7.2.2.3 Regel 2 – Weglassen aller 0-Segmente 
+ 			7.2.2.4 Aktivität – Üben von IPv6-Adressschreibweisen 
+  		7.2.3 Arten von IPv6-Adressen 
+			7.2.3.1 IPv6- Adressarten 
+ 			7.2.3.2 IPv6-Präfixlänge 
+ 			7.2.3.3 IPv6-Unicast-Adressen 
+ 			7.2.3.4 IPv6 Link-Local-Unicast-Adressen 
+ 			7.2.3.5 Aktivität – Identifizieren von IPv6-Adresstypen 
+ 		7.2.4 IPv6-Unicast-Adressen 
+			7.2.4.1 Struktur einer globalen IPv6-Unicast-Adresse 
+			7.2.4.3 Dynamische Konfiguration – SLAAC 
+ 			7.2.4.4 Dynamische Konfiguration – DHCPv6 
+			7.2.4.5 EUI-64-Prozess oder zufällig generiert 
+			7.2.4.6 Dynamische Link-Local-Adressen 
+
+
+
+IPv6-Subnetting
+---------------
+
+    Kapitel 8 IPv4- und IPv6-Subnetting 
+	8.3 Designanforderungen für IPv6 
+		8.3.1 Subnetzbildung in einem IPv6-Netzwerk 
+			8.3.1.1 Die globale IPv6-Unicast-Adresse 
+			8.3.1.2 Subnetzbildung mithilfe der Subnetz-ID 
+			8.3.1.3 Zuordnen von IPv6-Subnetzen 
+
+
+ 
