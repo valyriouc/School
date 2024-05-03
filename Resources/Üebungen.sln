@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Akkustand", "Akkustand\Akku
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Muster24", "Muster24\Muster24.csproj", "{793735CC-2CD0-429C-BF55-4A656ABBB1F5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bonuszahlung", "Bonuszahlung\Bonuszahlung.csproj", "{B9F7FCFD-1BD5-47F9-8802-42DA19AB8CB0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{793735CC-2CD0-429C-BF55-4A656ABBB1F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{793735CC-2CD0-429C-BF55-4A656ABBB1F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{793735CC-2CD0-429C-BF55-4A656ABBB1F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9F7FCFD-1BD5-47F9-8802-42DA19AB8CB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9F7FCFD-1BD5-47F9-8802-42DA19AB8CB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9F7FCFD-1BD5-47F9-8802-42DA19AB8CB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9F7FCFD-1BD5-47F9-8802-42DA19AB8CB0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
